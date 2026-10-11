@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>student app</title>
+</head>
+<body>
+    <h1>welcome to my student app home page</h1>
+    <h2>HERE IS YOUR STUDENT INFORMATION</h2>
+    <table border="1">
+        <tr>
+            <th>Student Name</th>
+            <th>Student Age</th>
+            <th>Student Email</th>
+            <th>Student Department</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.department }}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+</body>
+</html>
